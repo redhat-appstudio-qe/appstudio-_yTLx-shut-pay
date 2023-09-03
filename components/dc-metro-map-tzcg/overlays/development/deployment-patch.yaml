@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-tzcg
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-deploy-tenant/appstudio/dc-metro-map-tzcg@sha256:e2814467e18ddd0b7e1e08c22d5fc1e9774161790b87f9d7b1f0055cabc33f2d
+        name: my-nodejs
+        resources: {}
+status: {}
